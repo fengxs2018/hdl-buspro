@@ -1,0 +1,92 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HDL Buspro Gateway",
+        "description": "Enter the IP address and port number of the HDL Buspro gateway.",
+        "data": {
+          "host": "Host IP address",
+          "port": "Port number"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This gateway is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HDL Buspro Device Management",
+        "description": "Current devices:\n{devices}\n\nSelect an action:",
+        "data": {
+          "action": "Action"
+        }
+      },
+      "add_device": {
+        "title": "Add Device",
+        "description": "Select the type of device to add.",
+        "data": {
+          "device_type": "Device type"
+        }
+      },
+      "add_light": {
+        "title": "Add Light",
+        "description": "Enter the address and name for the light device.",
+        "data": {
+          "subnet_id": "Subnet ID",
+          "device_id": "Device ID",
+          "channel": "Channel",
+          "name": "Name (optional)"
+        }
+      },
+      "add_switch": {
+        "title": "Add Switch",
+        "description": "Enter the address and name for the switch device.",
+        "data": {
+          "subnet_id": "Subnet ID",
+          "device_id": "Device ID",
+          "channel": "Channel",
+          "name": "Name (optional)"
+        }
+      },
+      "add_binary_sensor": {
+        "title": "Add Binary Sensor",
+        "description": "Enter the address and type for the binary sensor device.",
+        "data": {
+          "subnet_id": "Subnet ID",
+          "device_id": "Device ID",
+          "channel": "Channel / Switch number",
+          "subtype": "Sensor type",
+          "name": "Name (optional)"
+        }
+      },
+      "add_sensor": {
+        "title": "Add Sensor",
+        "description": "Enter the address and type for the sensor device.",
+        "data": {
+          "subnet_id": "Subnet ID",
+          "device_id": "Device ID",
+          "subtype": "Sensor type",
+          "name": "Name (optional)"
+        }
+      },
+      "add_climate": {
+        "title": "Add Climate (Floor Heating)",
+        "description": "Enter the address for the climate device.",
+        "data": {
+          "subnet_id": "Subnet ID",
+          "device_id": "Device ID",
+          "name": "Name (optional)"
+        }
+      },
+      "remove_device": {
+        "title": "Remove Device",
+        "description": "Select a device to remove.",
+        "data": {
+          "device": "Device"
+        }
+      }
+    }
+  }
+}

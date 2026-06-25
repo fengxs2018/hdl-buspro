@@ -1,0 +1,92 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HDL Buspro 网关配置",
+        "description": "请输入 HDL Buspro 网关的 IP 地址和端口号。",
+        "data": {
+          "host": "主机 IP 地址",
+          "port": "端口号"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "该网关已配置。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HDL Buspro 设备管理",
+        "description": "当前设备：\n{devices}\n\n请选择操作：",
+        "data": {
+          "action": "操作"
+        }
+      },
+      "add_device": {
+        "title": "添加设备",
+        "description": "请选择要添加的设备类型。",
+        "data": {
+          "device_type": "设备类型"
+        }
+      },
+      "add_light": {
+        "title": "添加灯",
+        "description": "请输入灯设备的地址和名称。",
+        "data": {
+          "subnet_id": "子网 ID",
+          "device_id": "设备 ID",
+          "channel": "通道",
+          "name": "名称（可选）"
+        }
+      },
+      "add_switch": {
+        "title": "添加开关",
+        "description": "请输入开关设备的地址和名称。",
+        "data": {
+          "subnet_id": "子网 ID",
+          "device_id": "设备 ID",
+          "channel": "通道",
+          "name": "名称（可选）"
+        }
+      },
+      "add_binary_sensor": {
+        "title": "添加二进制传感器",
+        "description": "请输入二进制传感器的地址和类型。",
+        "data": {
+          "subnet_id": "子网 ID",
+          "device_id": "设备 ID",
+          "channel": "通道 / 开关编号",
+          "subtype": "传感器类型",
+          "name": "名称（可选）"
+        }
+      },
+      "add_sensor": {
+        "title": "添加传感器",
+        "description": "请输入传感器的地址和类型。",
+        "data": {
+          "subnet_id": "子网 ID",
+          "device_id": "设备 ID",
+          "subtype": "传感器类型",
+          "name": "名称（可选）"
+        }
+      },
+      "add_climate": {
+        "title": "添加温控器（地暖）",
+        "description": "请输入温控器设备的地址。",
+        "data": {
+          "subnet_id": "子网 ID",
+          "device_id": "设备 ID",
+          "name": "名称（可选）"
+        }
+      },
+      "remove_device": {
+        "title": "删除设备",
+        "description": "请选择要删除的设备。",
+        "data": {
+          "device": "设备"
+        }
+      }
+    }
+  }
+}
